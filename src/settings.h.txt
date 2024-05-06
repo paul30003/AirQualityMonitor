@@ -1,0 +1,22 @@
+#ifndef settings_h
+#define settings_h
+
+//Versioning
+const char* version = "V1.0";
+
+//Wifi Configuration
+const char* ssid = "";
+const char* password = "";
+String hostname = "sds011";
+
+// MYSQL Configuration
+// IPAddress server_addr(10,10,0,1);  // IP of the MySQL *server* here
+IPAddress server_addr();  // IP of the MySQL *server* here
+uint16_t server_port = 3306;
+
+char sqlUser[]         = "";
+char sqlPassword[]     = "";
+char default_database[] = "";
+char default_table[] = "";
+
+#endif    //settings_h
